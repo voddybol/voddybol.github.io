@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1770px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+.header__container {
+  max-width: 1920px;
+}
+
+.header__nav {
+  display: flex;
+  max-width: 1920px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+  margin-right: auto;
+  margin-left: 75px;
+  cursor: pointer;
+}
+
+.header__right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 75px;
+}
+
+.header__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__item {
+  margin-right: 85px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  list-style: none;
+}
+
+.header__link {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333;
+}
+
+.header__search {
+  cursor: pointer;
+}
+
+.section-hero {
+  padding: 100px 80px;
+  background: url(/img/hero1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.section-hero__heading {
+  width: 837px;
+  margin-bottom: 24px;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+  color: #FFF;
+}
+
+.section-hero__text {
+  width: 837px;
+  margin-bottom: 90px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #FFF;
+}
+
+.btn,
+.section-hero__btn {
+  padding: 25px 37px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29px;
+  background-color: #FF9900;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* About */
+
+.section-about {
+  margin-top: 100px;
+}
+
+.section-about__title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-about__text {
+  margin-bottom: 50px;
+  max-width: 1235px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.section-about__bottom {
+  display: flex;
+}
+
+.section-about__col {
+  justify-content: space-between;
+}
+
+.section-about__col:first-child {
+  background: url(/img/worker.jpg);
+  background-size: cover;
+  min-width: 868px;
+  min-height: 622px;
+}
+
+.section-about__col:last-child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.section-about__row {
+  display: flex;
+  flex: 0 0 44%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CACACA;
+  padding: 65px;
+}
+
+.section-about__row:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.section-about__icon {
+  height: 165px;
+  width: 190px;
+  left: 60px;
+  top: 65px;
+  margin-right: 50px;
+}
+
+.section-about__desc {
+  max-width: 450px;
+  margin-right: 65px;
+}
+
+.section-about__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.section-about__subtext {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.section-work {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.section-work__form {
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.section-work__input {
+  display: none;
+}
+
+.section-work__input:checked + label {
+  color: #FF9900;
+}
+
+.section-work__form label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.section-work__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 59px;
+}
+
+.section-work__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.section-work__subtext {
+  margin-bottom: 70px;
+  max-width: 750px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.section-work__btn_more {
+  padding: 20px 38px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.section-work__btn_contract {
+  margin-left: 32px;
+  padding: 19px 38px;
+  border: 1px solid #333;
+  background-color: #FFF;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+
+
+
