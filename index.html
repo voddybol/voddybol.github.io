@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Евклид</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <title>Евклид</title>
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
       <nav class="header__nav">
         <div class="header__left">
-          <img class="header__logo" src="/img/logo.png" alt="" >
+          <img class="header__logo" src="/img/logo.png" alt="" width="224px" height="72px">
         </div>
         <div class="header__right">
           <ul class="header__list">
@@ -34,7 +34,7 @@
 
 
       <section class="section-hero">
-        <h1 class="section-hero__heading">Проектные решения любой сложности</h1>
+        <h1 class="section-hero__title">Проектные решения любой сложности</h1>
         <p class="section-hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
         <button class="section-hero__btn">Заказать расчёт</button>
       </section>
@@ -42,22 +42,20 @@
 
       <section class="section-about">
         <div class="container section-about__container">
-          <h2 class="heading section-about__title">О нас</h2>
+          <h2 class="section-heading section-about__heading">О нас</h2>
           <p class="section-about__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
           <div class="section-about__bottom">
-            <div class="section-about__col">
-              <img src="/img/wor" alt="">
-            </div>
+            <div class="section-about__col"></div>
             <div class="section-about__col">
               <div class="section-about__row">
-                <img class="section-about__icon" src="/img/box.svg" alt="">
+                <img class="section-about__icon" src="/img/box.svg" alt="" width="190px" height="165px">
                 <div class="section-about__desc">
                   <h3 class="section-about__subtitle">Консультация с широким активом</h3>
                   <p class="section-about__subtext">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
                 </div>
               </div>
               <div class="section-about__row">
-                <img class="section-about__icon" src="/img/shest.svg" alt="">
+                <img class="section-about__icon" src="/img/shest.svg" alt="" width="190px" height="165px">
                 <div class="section-about__desc">
                   <h3 class="section-about__subtitle">В своём стремлении повысить </h3>
                   <p class="section-about__subtext">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
@@ -70,7 +68,7 @@
 
       <section class="section-work">
         <div class="container section-work__container">
-          <h2 class="section-work__title">Как мы работаем</h2>
+          <h2 class="section-heading section-work__heading">Как мы работаем</h2>
           <form class="section-work__form">
             <input class="section-work__input" type="radio" id="step1" name="work" checked>
             <label for="step1">1 шаг</label>
@@ -81,14 +79,49 @@
             <input class="section-work__input" type="radio" id="step4" name="work">
             <label for="step4">4 шаг</label>
           </form>
-          <h3 class="section-work__subtitle">Проводим консультацию</h3>
-          <p class="section-work__subtext">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-          <div class="section-work__btns">
-            <button class="btn section-work__btn_more">Подробнее</button>
-            <button class="btn section-work__btn_contract">Договор</button>
+          <div class="section-work__info">
+            <div class="section-work__desc">
+              <h3 class="section-work__subtitle">Проводим консультацию</h3>
+              <p class="section-work__subtext">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+              <div class="section-work__btns">
+                <button class="btn section-work__btn_more">Подробнее</button>
+                <button class="btn section-work__btn_contract">Договор</button>
+              </div>
+            </div>
+            <img class="section-work__img" src="/img/step1.jpg" alt="" width="870px" height="460px">
           </div>
         </div>
       </section>
+
+      <section class="section-faq">
+        <h2 class="section-heading section-faq__heading">Часто задаваемые вопросы</h2>
+        <div class="section-faq__block">
+          <div class="section-faq__item">
+            <h3 class="section-faq__title">Из чего формируется конечная стоимость проекта?</h3>
+            <p class="section-faq__text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+              Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+            </p>
+          </div>
+          <div class="section-faq__item">
+            <h3 class="section-faq__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, architecto!</p>
+          </div>
+          <div class="section-faq__item">
+            <h3 class="section-faq__title">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, architecto!</p>
+          </div>
+          <div class="section-faq__item">
+            <h3 class="section-faq__title">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
+            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, architecto!</p>
+          </div>
+          <div class="section-faq__item">
+            <h3 class="section-faq__title">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, architecto!</p>
+          </div>
+        </div>
+      </section>
+      <script src="libs/jquerry/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
     </div>
   </main>
 </body>

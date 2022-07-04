@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
-
+/* 
 img {
   size: 100%;
-}
+} */
 
 a {
   text-decoration: none;
@@ -79,10 +79,11 @@ a {
 .section-hero {
   padding: 100px 80px;
   background: url(/img/hero1.jpg) no-repeat;
-  background-size: cover;
+  width: 1770px;
+  height: 620px;
 }
 
-.section-hero__heading {
+.section-hero__title {
   width: 837px;
   margin-bottom: 24px;
   font-size: 70px;
@@ -118,7 +119,7 @@ a {
   margin-top: 100px;
 }
 
-.section-about__title {
+.section-heading {
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 400;
@@ -145,9 +146,8 @@ a {
 
 .section-about__col:first-child {
   background: url(/img/worker.jpg);
-  background-size: cover;
-  min-width: 868px;
-  min-height: 622px;
+  width: 868px;
+  height: 622px;
 }
 
 .section-about__col:last-child {
@@ -215,7 +215,7 @@ a {
 .section-work__form label {
   display: inline-block;
   cursor: pointer;
-  padding: 0px 15px;
+  margin-right: 15px;
   line-height: 34px;
   font-size: 18px;
   font-weight: 400;
@@ -260,7 +260,66 @@ a {
   line-height: 20px;
 }
 
+.section-work__info {
+  display: flex;
+}
 
+.section-work__img {
+  max-width: 870px;
+  max-height: 1000x;
+  margin-left: 142px;
+  margin-bottom: 0;
+}
 
+.section-faq__item {
+  padding: 39px 0px;
+}
 
+.section-faq__title {
+  position: relative;
+  cursor: pointer;
+}
+
+.section-faq__title::before,
+.section-faq__title::after {
+  content: '';
+  width: 31px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 10px;
+  left: 1700px;
+  transition: all 300ms ease;
+}
+
+.section-faq__title::before {
+  transform: rotate(90deg);
+}
+
+.section-faq__title::after {
+  transform: rotate(0deg);
+}
+
+.section-faq__title.active::before,
+.section-faq__title.active::after {
+  background-color: #FF9900;
+}
+
+.section-faq__title.active::before {
+  transform: rotate(45deg);
+}
+
+.section-faq__title.active::after {
+  transform: rotate(-45deg);
+}
+
+.section-faq__text {
+  display: none;
+  margin-top: 30px;
+  max-width: 1000px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
 
