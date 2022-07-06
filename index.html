@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -33,11 +35,33 @@
     <div class="container main__container">
 
 
-      <section class="section-hero">
-        <h1 class="section-hero__title">Проектные решения любой сложности</h1>
-        <p class="section-hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-        <button class="section-hero__btn">Заказать расчёт</button>
-      </section>
+      <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="/img/hero1.jpg" alt="1">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="/img/hero2.jpg" alt="2">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="/img/hero3.jpg" alt="3">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+      <!-- <h1 class="section-hero__title">Проектные решения любой сложности</h1>
+      <p class="section-hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+      <button class="section-hero__btn">Заказать расчёт</button> -->
+
 
 
       <section class="section-about">
@@ -146,7 +170,7 @@
         </div>
       </div>
       <div class="footer__middle">
-        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="GET" class="footer__form">
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post" class="footer__form">
           <h2 class="heading footer__heading">Оставить заявку</h2>
           <p><input class="footer__name" name="user" type="text" placeholder="Фамилия, Имя и Отчество *" min="2"></p>
           <p><input class="footer__mail" name="mail" type="email" placeholder="E-mail *"></p>
