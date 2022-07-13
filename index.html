@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <script src="libs/jquerry/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
       <div class="burger">
-        <span></span>
+        <img src="/img/burger.svg" alt="">
       </div>
-      <img class="header__logo" src="/img/Hlogo.svg" alt="" width="224px" height="72px">
+      <div class="header__logo">
+        <img class="header__logo" src="/img/Hlogo.svg" alt="" width="224px" height="72px">
+      </div>
       <nav class="header__nav">
         <div class="header__navbar">
           <ul class="header__list">
@@ -29,7 +29,9 @@
           </ul>
         </div>
       </nav>
-      <i class="header__search"><svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/><path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/></svg></i>
+      <div class="header__search">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/><path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/></svg>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -123,26 +125,49 @@
         <h2 class="heading section-faq__heading">Часто задаваемые вопросы</h2>
         <div class="section-faq__block">
           <div class="section-faq__item">
-            <h3 class="section-faq__title">Из чего формируется конечная стоимость проекта?</h3>
-            <p class="section-faq__text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
-              Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
-            </p>
+            <div class="section-faq__desc">
+              <h3 class="section-faq__title">Из чего формируется конечная стоимость проекта?</h3>
+              <p class="section-faq__text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+            </div>
+            <div class="section-faq__icon">
+              <img src="/img/plus.svg" alt="">
+            </div>
           </div>
           <div class="section-faq__item">
-            <h3 class="section-faq__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
-            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            <div class="section-faq__desc">
+              <h3 class="section-faq__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+              <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            </div>
+            <div class="section-faq__icon">
+              <img src="/img/plus.svg" alt="">
+            </div>
           </div>
           <div class="section-faq__item">
-            <h3 class="section-faq__title">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
-            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            <div class="section-faq__desc">
+              <h3 class="section-faq__title">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+              <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            </div>
+            <div class="section-faq__icon">
+              <img src="/img/plus.svg" alt="">
+            </div>
           </div>
           <div class="section-faq__item">
-            <h3 class="section-faq__title">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
-            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            <div class="section-faq__desc">
+              <h3 class="section-faq__title">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
+              <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            </div>
+            <div class="section-faq__icon">
+              <img src="/img/plus.svg" alt="">
+            </div>
           </div>
           <div class="section-faq__item">
-            <h3 class="section-faq__title">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
-            <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            <div>
+              <h3 class="section-faq__title">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+              <p class="section-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, quae eaque cum hic nemo voluptas dolorem nostrum, deserunt velit unde in numquam reiciendis odio earum voluptatem! Facere iusto soluta sequi ducimus, iure iste voluptatibus repellendus unde accusamus culpa velit illum, dolor esse rerum et minima eveniet ab ea delectus?</p>
+            </div>
+            <div class="section-faq__icon">
+              <img src="/img/plus.svg" alt="">
+            </div>
           </div>
         </div>
        </div>
