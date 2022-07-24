@@ -17,7 +17,9 @@
       <div class="burger">
         <span></span>
       </div>
-      <img class="header__logo" src="/img/Hlogo.svg" alt="" width="224px" height="72px">
+      <div class="header__logo">
+        <img class="header__logo" src="/img/Hlogo.svg" alt="" width="224px" height="72px">
+      </div>
       <nav class="header__nav">
         <div class="header__navbar">
           <ul class="header__list">
@@ -71,7 +73,7 @@
                 <div class="article__ellipse coube"></div>
                 <div class="article__info">
                   <p class="article__info__descr">
-                    <span>Консультация с широким активом</span>
+                    <span class="article__info__title">Консультация с широким активом</span>
                     А также свежий взгляд на привычные вещи - безусловно открывает
                     новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
                   </p>
@@ -81,7 +83,7 @@
                 <div class="article__ellipse engine"></div>
                 <div class="article__info">
                   <p class="article__info__descr">
-                    <span>В своём стремлении повысить</span>
+                    <span class="article__info__title">В своём стремлении повысить</span>
                     Качество жизни, они забывают, что сплочённость команды
                     профессионалов представляет собой интересный эксперимент проверки прогресса
                     профессионального сообщества.
@@ -173,12 +175,12 @@
           <h2 class="heading footer__heading">Оставить заявку</h2>
           <p><input class="footer__name" name="user" type="text" placeholder="Фамилия, Имя и Отчество *" min="2"></p>
           <p><input class="footer__mail" name="mail" type="email" placeholder="E-mail *"></p>
-          <p><textarea class="footer__msg" name="message" id="msg" cols="10" rows="10" placeholder="Ваше сообщение"></textarea></p>
+          <p><textarea class="footer__msg" name="message" id="msg" cols="10" rows="10" placeholder="Cообщение"></textarea></p>
           <button class="footer__btn">Отправить данные</button>
-          <div class="checkbox__">
+          <span>
             <input class="footer__checkbox" type="checkbox" name="checkbox" required/>
             <label class="footer__checkbox_label" for="#checkbox">Согласен на обработку данных</label>
-          </div>
+          </span>
         </form>
       </div>
       <div class="footer__right">
