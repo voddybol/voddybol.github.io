@@ -46,10 +46,6 @@ a {
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 
-.burger {
-  display: none;
-}
-
 .header__nav {
   display: flex;
   padding-top: 14px;
@@ -75,53 +71,16 @@ a {
 }
 
 .header__item {
-  display: inline-block;
-  position: relative;
   margin-right: 85px;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   list-style: none;
-  padding-bottom: 5px;
-  transition: .3s all ease;
-  border: 3px solid transparent;
 }
 
-<<<<<<< HEAD
 .header__search svg {
-=======
-.header__item:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color:#FF9900;
-  transform-origin: center;
-  transition: 0.3s all ease-out;
-}
-
-.header__item:hover:after {
-  transform: scaleX(1);
-  transform-origin: center;
-}
-
-.header__item:active {
-  color: #333;
-  border: 3px solid #FF9900;
-}
-
-.header__search path, 
-.header__search rect {
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
   cursor: pointer;
   transform: translateY(2px);
-}
-
-.header__search path:hover {
-  fill: red;
 }
 
 .header__link {
@@ -168,10 +127,6 @@ a {
   color: #FFF;
   cursor: pointer;
 }
-
-.section-hero__btn:hover {
-  background: rgba(255, 153, 0, 0.7);
-}
 /* About */
 
 .section-about {
@@ -213,12 +168,10 @@ a {
 }
 
 .about-services {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
-=======
-	justify-content: space-between;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
   flex-wrap: wrap;
 }
 
@@ -243,11 +196,7 @@ a {
 .block {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   justify-content: center;
-=======
-	justify-content: center;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 	height: 100%;
 }
 
@@ -278,6 +227,8 @@ a {
 .block__name {
   position: relative;
   z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -300,11 +251,7 @@ a {
 }
 
 .block__caption::before {
-<<<<<<< HEAD
   transform: scale(1.1);
-=======
-	transform: scale(1.1);
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 }
 
 .block__caption::before,
@@ -346,24 +293,16 @@ a {
 	font-size: 16px;
 	color: #fff;
 	border: 3px solid #FF9900;
-<<<<<<< HEAD
 	padding: 18px 36px;
 	-webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 	-o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-=======
-	padding: 20px 40px;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .button-trnsp:hover {
 	background-color: #FF9900;
 	color: #fff;
-<<<<<<< HEAD
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-=======
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 }
 
 .button-trnsp:active {
@@ -607,30 +546,21 @@ a {
   margin-bottom: 100px;
 }
 
-.section-faq__icon img {
-  width: 50px;
-  height: 50px;
-}
-
 .section-faq__heading {
   margin-bottom: 43px;
   margin-left: 0;
 }
 
 .section-faq__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #CACACA;
-  cursor: pointer;
 }
 
 .section-faq__item:first-child {
   border-top: 1px solid #CACACA;
 }
 
-
 .section-faq__title {
+  position: relative;
   padding: 39px 0px;
   cursor: pointer;
   font-size: 24px;
@@ -640,7 +570,6 @@ a {
   text-align: left;
 }
 
-<<<<<<< HEAD
 .section-faq__title::before,
 .section-faq__title::after {
   content: '';
@@ -674,8 +603,6 @@ a {
   transform: rotate(-45deg);
 }
 
-=======
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 .section-faq__text {
   display: none;
   font-size: 16px;
@@ -863,13 +790,34 @@ a {
   }
 
   .burger{
-    display: block;
+    position: absolute;
     width: 30px;
     height: 23px;
     cursor: pointer;
     top: 34px;
   }
-    
+  .burger span, .burger span:before, .burger span:after{
+    width: 30px;
+    position: absolute;
+    height: 3px;
+    background: #333;
+    display: block;
+    transition: .3s;
+  }
+  .burger span:before{
+    content: "";
+    top: -10px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .burger span{
+    top: 14px;
+  }
+  .burger span:after{
+    content: "";
+    bottom: -10px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
   .section-hero {
     padding: 160px 77px;
     background: url(/img/hero1.jpg) center / cover no-repeat;
@@ -948,13 +896,8 @@ a {
 		display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
 		margin-bottom: 32px;
 		padding: 63px 156px 63px 112px;
-=======
-		margin-bottom: 40px;
-		padding: 66px 111px;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 	}
 
   .services-right__article:last-child {
@@ -1067,6 +1010,11 @@ a {
     top: 61px;
   }
 
+  .section-faq__title::before,
+  .section-faq__title::after {
+    left: 884px;
+  }
+
   footer {
     background: #222;
   }
@@ -1156,16 +1104,12 @@ a {
   }
 
   .burger {
-<<<<<<< HEAD
     position: absolute;
     top: 17px;
   }
 
   .header__logo {
     margin-left: 129px;
-=======
-    display: block;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
   }
 
   .section-hero {
@@ -1181,6 +1125,7 @@ a {
 
   .section-hero__text {
     max-width: 588px;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -1333,7 +1278,6 @@ a {
     max-width: 570px;
   }
 
-<<<<<<< HEAD
   .section-faq__item:nth-child(2) .section-faq__title {
     padding: 30px 0;
     max-width: 600px;
@@ -1385,8 +1329,6 @@ a {
     left: 628px;
   }
 
-=======
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
   .footer__container {
     display: flex;
     flex-direction: column-reverse;
@@ -1516,11 +1458,7 @@ a {
 
 	.block__name {
     flex-direction: column;
-<<<<<<< HEAD
     align-items: flex-start;
-=======
-		align-items: flex-start;
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
 		padding: 0;
 	}
 
@@ -1768,7 +1706,6 @@ a {
     line-height: 24px;
   }
 
-<<<<<<< HEAD
   .section-faq__title::before,
   .section-faq__title::after {
     width: 19px;
@@ -1796,8 +1733,6 @@ a {
   }
 
 
-=======
->>>>>>> 47c30c21ed68663c103ebe7ff432f1108b36a01b
   .footer__container {
     padding: 0;
     padding-bottom: 30px;
