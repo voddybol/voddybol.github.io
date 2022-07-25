@@ -74,11 +74,17 @@ a {
 }
 
 .header__item {
+  position: relative;
   margin-right: 85px;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   list-style: none;
+}
+
+.header__item::before {
+  content: " ";
+  border-bottom: 3px solid red;
 }
 
 .header__search svg {
@@ -1067,10 +1073,23 @@ a {
     flex: 1 0 33.333%;
   }
 
+  .form__input {
+    display: flex;
+  }
+
+  .checkbox__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .footer__checkbox_label {
-    font-size: 16px;
+    display: inline;
+    align-items: center;
+    font-size: 1.8vw;
     font-weight: 400;
     line-height: 32px;
+    margin-left: 5px;
   }
 
   .footer__name,
@@ -1328,6 +1347,10 @@ a {
     margin-left: 0;
     margin-bottom: 50px;
     justify-content: start;
+  }
+
+  .footer__checkbox_label {
+    font-size: 16px;
   }
 
   .footer__left {
@@ -1652,25 +1675,14 @@ a {
 
   .section-work__img img {
     object-fit: contain;
-    max-width: 290px;
+    max-width: 260px;
     margin: 0 15px 0 0;
   }
-
-  /* .section-work__img {
-    flex: 1 1 50%;
-    margin: 0 0 47px 0;
-  }
-
-  .section-work__img img {
-    object-fit: cover;
-    max-width: 638px;
-    margin: 0 15px 0 0;
-    height: 100%;
-  } */
 
   .section-work__btns {
     display: flex;
     justify-content: space-between;
+    margin-right: 15px;
   }
 
   .section-work__btn_more {
@@ -1680,6 +1692,7 @@ a {
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
+    margin-right: 15px;
   }
 
   .section-work__btn_contract {
@@ -1713,7 +1726,7 @@ a {
   .section-faq__title::after {
     width: 19px;
     top: 53px;
-    left: 267px;
+    left: 242px;
   }
 
   .section-faq__item:nth-child(n+2):nth-child(-n+4) .section-faq__title {
