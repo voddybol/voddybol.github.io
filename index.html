@@ -178,11 +178,13 @@
           <p><input class="footer__name" name="user" type="text" placeholder="Фамилия, Имя и Отчество *" min="2"></p>
           <p><input class="footer__mail" name="mail" type="email" placeholder="E-mail *"></p>
           <p><textarea class="footer__msg" name="message" id="msg" cols="10" rows="10" placeholder="Cообщение"></textarea></p>
-          <button class="footer__btn">Отправить данные</button>
-          <span>
-            <input class="footer__checkbox" type="checkbox" name="checkbox" required/>
-            <label class="footer__checkbox_label" for="#checkbox">Согласен на обработку данных</label>
-          </span>
+          <div class="form__input">
+            <button class="footer__btn">Отправить данные</button>
+            <span class="checkbox__">
+              <input class="footer__checkbox" type="checkbox" name="checkbox" required/>
+              <label class="footer__checkbox_label" for="#checkbox">Согласен на обработку данных</label>
+            </span>
+          </div>
         </form>
       </div>
       <div class="footer__right">
