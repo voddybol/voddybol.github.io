@@ -1672,7 +1672,7 @@ a {
 
   .section-faq__title {
     padding: 30px 0;
-    max-width: 320px;
+    max-width: 290px;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -1685,24 +1685,15 @@ a {
     left: 342px;
   }
 
-  .section-faq__item:nth-child(n+2):nth-child(-n+4) .section-faq__title {
+
+  .section-faq__item:nth-child(1n+2) .section-faq__title {
     max-width: 320px;
   }
 
-  .section-faq__item:nth-child(n+2):nth-child(-n+4) .section-faq__title::before,
-  .section-faq__item:nth-child(n+2):nth-child(-n+4) .section-faq__title::after {
+  .section-faq__item:nth-child(1n+2):not(:nth-child(4)) .section-faq__title::before,
+  .section-faq__item:nth-child(1n+2):not(:nth-child(4)) .section-faq__title::after {
     top: 53px;
   }
-
-  .section-faq__item:nth-child(5) .section-faq__title {
-    max-width: 320px;
-  }
-
-  .section-faq__item:nth-child(5) .section-faq__title::before,
-  .section-faq__item:nth-child(5) .section-faq__title::after {
-    top: 53px;
-  }
-
 
   .footer__container {
     max-width: 395px;
