@@ -12,13 +12,10 @@ window.addEventListener('DOMContentLoaded', function() {
       prevEl: '.swiper-button-prev',
     },
   
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
+    autoplay: {
+      delay: 5000,
     },
   });
-
-
 
 $(document).ready(function() {
   $('.header__burger').click(function(event) {
