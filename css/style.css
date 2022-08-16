@@ -99,6 +99,10 @@ a {
 }
 
 .header__list li {
+  list-style: none;
+}
+
+.header__list li a {
   position: relative;
   list-style: none;
   margin-right: 80px;
@@ -106,17 +110,17 @@ a {
   font-weight: 600;
   line-height: 22px;
   list-style: none;
-  padding: 4px;
 }
 
 .header__list li a {
   color: #333;
+  padding: 4px;
 }
 
-.header__list li::before {
+.header__list li a::before {
   content: " ";
   position: absolute;
-  bottom: 2px;
+  bottom: 3px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -125,16 +129,16 @@ a {
   transform: scaleX(0);
 }
 
-.header__list li:hover::before {
+.header__list li a:hover::before {
   cursor: pointer;
   transform: scaleX(1);
 }
 
-.header__list li:focus {
+.header__list li a:focus {
   outline: 2px solid #FF9900;
 }
 
-.header__list li:active {
+.header__list li a:active {
   color: #E1670E;
 }
 
@@ -155,9 +159,8 @@ a {
   transition: .3s fill stroke ease;
 }
 
-.header__search::before {
-  border: 2px solid red;
-  border-radius: 50%;
+.header__search:active {
+  outline: 2px solid #FF9900;
 }
 
 .header__search svg rect,
@@ -957,7 +960,7 @@ a {
     position: relative;
     width: 30px;
     height: 23px;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
     transform: rotateY(180deg);
   }
@@ -1048,6 +1051,7 @@ a {
     align-items: center;
     justify-content: flex-start;
     text-align: start;
+    white-space: nowrap;
   }
 
   .header__list li:last-child {
@@ -1624,6 +1628,13 @@ a {
     padding: 0;
   }
 
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .footer__input {
     display: flex;
     flex-direction: column;
@@ -1672,7 +1683,7 @@ a {
     overflow: auto;
     top: -100%;
     left: 0;
-    height: 37%;
+    height: 100%;
     width: 100%;
     transition: .5s all ease;
     background-color: #fff;
