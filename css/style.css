@@ -1702,10 +1702,6 @@ a {
   }
 
   .header__burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 23px;
     z-index: 52;
   }
 
