@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 2px solid #FF9900;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -136,10 +140,6 @@ a {
   transform: scaleX(1);
 }
 
-.header__list li a:focus {
-  outline: 2px solid #FF9900;
-}
-
 .header__list li a:active {
   color: #E1670E;
 }
@@ -155,6 +155,7 @@ a {
 }
 
 .header__search {
+  background-color: #fff;
   position: relative;
   z-index: 2;
   cursor: pointer;
@@ -615,14 +616,8 @@ a {
   color: #FF9900;
 }
 
-.tabs__item a:focus {
-  color: inherit;
-  outline: 2px solid #E1670E;
-}
-
 .tabs__item a:active {
   color: #E1670E;
-  outline: none;
 }
 
 .tabs__container {
@@ -749,6 +744,10 @@ a {
   max-width: 1003px;
 }
 
+.faq__icon {
+  background-color: #fff;
+}
+
 .faq__icon svg ellipse,
 .faq__icon svg path {
   transition: .3s fill ease;
@@ -812,10 +811,6 @@ a {
   color: #FF9900;
 }
 
-.footer__list li a:focus {
-  outline: 2px solid #FF9900;
-}
-
 .footer__list li a:active {
   color: #E1670E;
 }
@@ -827,7 +822,7 @@ a {
   line-height: 36px;
 }
 
-.footer__icon {
+.footer__socials a {
   margin-right: 21px;
   cursor: pointer;
 }
@@ -892,7 +887,6 @@ a {
 .footer__msg:active {
   background: #666666;
 }
-
 
 .footer__msg {
   resize: none;
