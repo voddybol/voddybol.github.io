@@ -746,6 +746,7 @@ a {
 
 .faq__icon {
   background-color: #fff;
+  cursor: pointer;
 }
 
 .faq__icon svg ellipse,
